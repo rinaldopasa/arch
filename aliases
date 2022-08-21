@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+# +--------+
+# | System |
+# +--------+
+alias shutdown='sudo shutdown now'
+alias restart='sudo reboot'
+alias suspend='pm-suspend'
+
+# +----+
+# | ls |
+# +----+
+alias ls='ls --color=auto'
+alias lsl='ls -l'
+alias ll='ls -lahF'
+alias lls='ls -lahFtr'
+alias la='ls -Ahl'
+alias l='ls -CF'
+
+# +-------+
+# | mkdir |
+# +-------+
+alias md='mkdir -p'
+
+# +------+
+# | grep |
+# +------+
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# +-------+
+# | xclip |
+# +-------+
+alias cb='xclip -sel clip'
+
+# +------+
+# | Ping |
+# +------+
+alias pg='ping 1.1.1.1'
+
+# +--------+
+# | Pacman |
+# +--------+
+alias paci='sudo pacman -S'		# install
+alias pachi='pacman -Ql'		# pacman has installed - what files where installed in a package
+alias pacls='pacman -Qe'		# package list has installed
+alias pacs='pacman -Ss'			# search
+alias pacu='sudo pacman -Syu'		# update
+alias pacr='sudo pacman -R'		# remove package but but not dependencies
+alias pacrr='sudo pacman -Rs'		# remove package with unused dependencies by other packages
+alias pacrc='sudo pacman -Sc'		# remove pacman's cache
+alias pacrcc='sudo pacman -Scc'		# remove the whole cache
+
+# +-----+
+# | yay |
+# +-----+
+alias yayi='yay -S'			# install
+alias yayhi='yay -Ql'			# yay has installed - what files where installed in a package
+alias yayls='yay -Qe'			# package list has installed
+alias yays='yay -Ss' 	   		# search
+alias yayr='yay -R'  		   	# remove package but but not dependencies
+alias yayrr='yay -Rs'			# remove package with unused dependencies by other packages
+alias yayrc='yay -Sc'			# remove pacman's cache
+
+# +--------+
+# | neovim |
+# +--------+
+alias vim='nvim'
